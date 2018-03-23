@@ -1,0 +1,623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0042)http://www.robots.ox.ac.uk/~vgg/data/pets/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>
+Visual Geometry Group: Oxford-IIIT Pet Dataset
+</title>
+<link rel="stylesheet" type="text/css" href="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/vggcss.css" media="all">
+<link rel="stylesheet" type="text/css" href="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/vggdata.css" media="all">
+<link rel="stylesheet" type="text/css" href="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/vggdatawide.css" media="all">
+<link rel="stylesheet" href="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/header.css" type="text/css">
+<link rel="stylesheet" href="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/listpubli.css" type="text/css">
+<!--#include virtual="/~vgg/include/header.ssi" -->
+</head>
+<body>
+<!--#include virtual="/~vgg/include/cookies_banner.ssi" -->
+
+<h2>The Oxford-IIIT Pet Dataset</h2>
+
+<div id="main" style="width: 900px;">
+
+<h4>
+  <a href="http://www.robots.ox.ac.uk/~omkar">Omkar M Parkhi</a> and
+  <a href="http://www.vlfeat.org/~vedaldi">Andrea Vedaldi</a> and
+  <a href="http://www.robots.ox.ac.uk/~az/">Andrew Zisserman</a> and
+  <a href="http://www.iiit.ac.in/~jawahar/">C. V. Jawahar</a>  <br><br>
+</h4>
+
+<h3>Overview</h3>
+
+<p>
+We have created a 37 category pet dataset with roughly 200 images for
+each class. The images have a large variations in scale, pose and
+lighting. All images have an associated ground truth annotation of
+breed, head ROI, and pixel level trimap segmentation.
+</p>
+
+
+<h3>Downloads</h3>
+<p> The data needed for evaluation are:</p>
+<ol>
+<li><a href="http://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz">Dataset</a>
+<!--<li><a href="#">The data splits</a>-->
+</li><li><a href="http://www.robots.ox.ac.uk/~vgg/data/pets/data/annotations.tar.gz">Groundtruth data</a>
+</li></ol>
+
+<h3>Annotations Examples</h3>
+<p><img src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/pet_annotations.jpg" width="50%">
+<br>
+The following annotations are available for every image in the
+dataset: (a) species and breed name; (b) a tight bounding box (ROI)
+around the head of the animal; and (c) a pixel level
+foreground-background segmentation (Trimap).
+</p>
+
+<h3>Class Examples</h3>
+<div>
+	<table>
+		<tbody><tr>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Abyssinian">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Abyssinian_24.jpg"></td>
+					        <td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Abyssinian_47.jpg"></td>
+					</tr>
+					<tr><td><h5> Abyssinian </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Bengal">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Bengal_47.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Bengal_24.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Bengal </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Bombay">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Bombay_47.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Bombay_24.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Bombay </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Birman">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Birman_47.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Birman_24.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Birman </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=British_Shorthair">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/British_Shorthair_47.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/British_Shorthair_30.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> British Shorthair </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+		</tr><tr>
+		</tr>
+			<tr><td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Maine_Coon">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Maine_Coon_47.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Maine_Coon_24.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Maine Coon </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+		
+	
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Persian">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Persian_30.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Persian_45.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Persian </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>	
+			
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Egyptian_Mau">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Egyptian_Mau_34.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Egyptian_Mau_87.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Egyptian Mau </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>	
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Ragdoll">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Ragdoll_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Ragdoll_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Ragdoll </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>	
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Russian_Blue">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Russian_Blue_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Russian_Blue_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Russian Blue </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Siamese">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Siamese_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Siamese_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Siamese </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=Sphynx">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Sphynx_47.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/Sphynx_24.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Sphynx </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>	
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=boxer">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/boxer_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/boxer_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Boxer </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=keeshond">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/keeshond_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/keeshond_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Keeshond </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=havanese">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/havanese_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/havanese_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Havanese </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+		</tr>	
+		<tr>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=basset_hound">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/basset_hound_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/basset_hound_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Basset Hound </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=english_setter">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/english_setter_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/english_setter_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> English Setter </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=miniature_pinscher">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/miniature_pinscher_24.jpg">
+						<img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/miniature_pinscher_47.jpg">
+					
+					<h5> Miniature Pinscher </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+		
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=chihuahua">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/chihuahua_47.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/chihuahua_24.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Chihuahua </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=great_pyrenees">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/great_pyrenees_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/great_pyrenees_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Great Pyrenees </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=german_shorthaired">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/german_shorthaired_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/german_shorthaired_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> German Shorthaired </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=beagle">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/beagle_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/beagle_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Beagle </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=staffordshire_bull_terrier">
+				<table>
+					<tbody><tr>
+						<td>
+							<img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/staffordshire_bull_terrier_47.jpg">
+							<img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/staffordshire_bull_terrier_24.jpg">
+							<h5> Staffordshire Bull Terrier </h5>
+						</td>
+</tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=english_cocker_spaniel">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/english_cocker_spaniel_24.jpg">
+						<img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/english_cocker_spaniel_47.jpg">
+					
+						<h5> English Cocker Spaniel </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=newfoundland">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/newfoundland_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/newfoundland_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> New Found Land </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=pomeranian">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/pomeranian_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/pomeranian_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Pomeranian </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=leonberger">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/leonberger_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/leonberger_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Leonberger </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=american_pit_bull_terrier">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/american_pit_bull_terrier_24.jpg">
+						<img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/american_pit_bull_terrier_47.jpg">
+					
+					<h5> American Pit Bull Terrier </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=wheaten" terrier="">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/wheaten_terrier_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/wheaten_terrier_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Wheaten Terrier </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=japanese_chin">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/japanese_chin_24.jpg">
+						<img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/japanese_chin_47.jpg">
+					
+						<h5> Japanese Chin </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=samoyed">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/samoyed_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/samoyed_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Samyod </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=scottish_terrier">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/scottish_terrier_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/scottish_terrier_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Scottish Terrier </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=shiba_inu">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/shiba_inu_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/shiba_inu_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Shiba Inu </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=pug">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/pug_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/pug_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Pug </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=saint_bernard">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/saint_bernard_24.jpg"></td>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/saint_bernard_47.jpg"></td>
+					
+					</tr>
+					<tr><td><h5> Saint Bernard </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=american_bulldog">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/american_bulldog_24.jpg">
+						    <img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/american_bulldog_47.jpg">		
+						    <h5> American Bulldog </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+			<td>
+				<a target="_new" href="http://www.robots.ox.ac.uk/~vgg/data/pets/getCategory.php?category=yorkshire_terrier">
+				<table>
+					<tbody><tr>
+						<td><img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/yorkshire_terrier_24.jpg">
+						    <img style="height: 75px;" src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/yorkshire_terrier_47.jpg">		
+						    <h5> Yorkshire_Terrier </h5></td></tr>
+				</tbody></table>
+				</a>
+			</td>
+
+		</tr>
+
+	</tbody></table>
+
+</div>
+
+<!--<p><img src="pet_categories.jpg" height="60%"></p>-->
+
+<h3>Dataset Statistics</h3>
+<p><img src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/breed_count.jpg" height="60%"></p>
+
+
+<!--
+<table align=center>
+<tr>
+<td>
+<h3>Annotations Examples</h3>
+<p><img src="pet_annotations.jpg" ></p>
+</td>
+<td>
+</td>
+<td>
+<h3>Dataset Statistics</h3>
+<p><img src="breed_count.jpg" ></p>
+</td>
+</tr>
+</table>
+-->
+<h3>Relevant Publications</h3>
+
+<div class="ref">
+  <div class="authors">
+   O. M. Parkhi,
+   A. Vedaldi,
+   A. Zisserman,
+   C. V. Jawahar
+  </div>
+  <div class="title">
+   <a href="http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf">
+    Cats and Dogs
+   </a> &nbsp; 
+</div>
+  <div class="conf">
+   IEEE Conference on Computer Vision and Pattern Recognition,  2012
+  </div>
+  <div class="links">
+     <a onclick="if (document.getElementById(&quot;BIBparkhi12a&quot;).style.display==&quot;none&quot;) document.getElementById(&quot;BIBparkhi12a&quot;).style.display=&quot;block&quot;; else document.getElementById(&quot;BIBparkhi12a&quot;).style.display=&quot;none&quot;;"> Bibtex </a> |  <a onclick="if (document.getElementById(&quot;ABSparkhi12a&quot;).style.display==&quot;none&quot;) document.getElementById(&quot;ABSparkhi12a&quot;).style.display=&quot;block&quot;; else document.getElementById(&quot;ABSparkhi12a&quot;).style.display=&quot;none&quot;;"> Abstract </a> |  <a href="http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf"> PDF </a> | <a href="http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/poster.pdf"> Poster </a> | 
+  <a href="http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a"> All </a>   </div>
+  <div style="display: none;" class="BibtexExpand" id="BIBparkhi12a">
+   <pre class="bibtex">@InProceedings{parkhi12a,
+  author       = "Parkhi, O. M. and Vedaldi, A. and Zisserman, A. and Jawahar, C.~V.",
+  title        = "Cats and Dogs",
+  booktitle    = "IEEE Conference on Computer Vision and Pattern Recognition",
+  year         = "2012",
+}
+</pre>
+
+  </div>
+  <div style="display: none;" class="AbstractExpand" id="ABSparkhi12a"><br>
+
+    We investigate the fine grained object categorization problem of
+  determining the breed of animal from an image. To this end we
+  introduce a new annotated dataset of pets, the <b>Oxford-IIIT-Pet dataset</b>, covering 37
+  different breeds of cats  and dogs. The visual problem is very challenging as these animals,
+  particularly cats, are very deformable and there can be quite subtle
+  differences between the breeds.
+
+  We make a number of contributions: first, we introduce a model to
+  classify a pet breed automatically from an image. The model combines
+  shape, captured by a deformable part model detecting the pet face,
+  and appearance, captured by a bag-of-words model that describes the
+  pet fur. Fitting the model involves automatically segmenting the
+  animal in the image. Second, we compare two classification
+  approaches: a hierarchical one, in which a pet is first assigned to
+  the cat or dog family and then to a breed, and a flat one, in
+  which the breed is obtained directly. We also investigate a number
+  of animal and image orientated spatial layouts.
+
+  These models are very good: they beat all previously published
+  results on the challenging ASIRRA test (cat vs dog
+  discrimination). When applied to the task of discriminating the 37
+  different breeds of pets, the models obtain an average accuracy of
+  about 59%, a very encouraging result considering the difficulty of
+  the problem.
+  </div>
+ </div>
+
+<br> <br> <br>
+<h3>Acknowledgements</h3>
+<p> This work is funded by The UK India Education and Research Initiative <a href="http://cvit.iiit.ac.in/ukieri/">(UKIERI)</a> and ERC Grant 
+ <a href="http://www.robots.ox.ac.uk/~vgg/projects/visrec/">VisRec</a>.</p>
+<p>
+<img style="height: 6em; margin-right:3em; width:auto; " src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/ukieri.gif" alt="ukieri logo" border="0" width="200">
+<img style="height: 6em; margin-right:3em; width:auto; " src="./Visual Geometry Group_ Oxford-IIIT Pet Dataset_files/erc.jpg" alt="erc logo" border="0" width="200">
+</p>
+
+
+
+<div id="footbar">
+Page maintained by <a href="mailto:vgg-webmasters@robots.ox.ac.takethisout.uk"><tt>vgg-webmasters</tt></a> at the <tt>robots.ox.ac.uk</tt> domain.
+<br>Last updated 4th April 2012
+</div>
+
+
+
+
+</div></body></html>
