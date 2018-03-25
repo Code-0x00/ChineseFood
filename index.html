@@ -12,16 +12,11 @@
     <h2>The Chinese Food Dataset</h2>
     <div id="main" style="width: 900px;">
         <h4>
-            <a href="http://www.robots.ox.ac.uk/~omkar">Qi Xuan</a>
-            and
-            <a href="http://www.vlfeat.org/~vedaldi">Haoquan Xiao</a>
-            and
-            <a href="http://www.robots.ox.ac.uk/~az/">Chenbo Fu</a>
-            and
-            <a href="http://www.iiit.ac.in/~jawahar/">Yi Liu</a>
-            <br>
-            <br>
+            <a href="xq">Qi Xuan</a>and<a href="xhq">Haoquan Xiao</a>and
+            <a href="fcb">Chenbo Fu</a>and<a href="ly">Yi Liu</a>
         </h4>
+        <br>
+        <br>
         <h3>Overview</h3>
         <p>
             We have created a 20 category Chinese food dataset with roughly 3500 images for each class. The images have a large variations in scale, pose and lighting.
@@ -36,7 +31,9 @@
         </p>
         <h3>Class Examples</h3>
         <div>
-            <table id="imageslist"></table>
+            <table>
+                <tbody id="imageslist"></tbody>
+            </table>
         </div>
         <h3>Dataset Statistics</h3>
         <table  border="1" bordercolor="black" cellspacing="0" cellpadding="5" align="center" style="border-collapse:collapse;">
@@ -57,7 +54,7 @@
                         Yi Liu
             </div>
             <div class="title">
-                <a href="http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf">Chinese Food</a> 
+                <a href="pdf">Chinese Food</a> 
             </div>
             <div class="conf">
                 ??
@@ -78,15 +75,9 @@
                                 document.getElementById(&quot;ABSparkhi12a&quot;).style.display=&quot;none&quot;;"> 
                             Abstract 
                 </a> |  
-                <a href="http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/parkhi12a.pdf"> 
-                            PDF 
-                </a> | 
-                <a href="http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a/poster.pdf"> 
-                            Poster 
-                </a> | 
-                <a href="http://www.robots.ox.ac.uk/~vgg/publications/2012/parkhi12a"> 
-                            All 
-                </a> 
+                <a href="pdf">PDF</a> | 
+                <a href="pdf">Poster</a> | 
+                <a href="">All</a> 
             </div>
             <div style="display: none;" class="BibtexExpand" id="BIBparkhi12a">
                 <pre class="bibtex">
@@ -124,7 +115,7 @@
     
         <script>
             function aBuild(i,j,name){
-            var num=i*5+j
+                var num=i*5+j
                 xA=document.createElement("a");
                 xA.setAttribute("href",'test');
                 
@@ -133,7 +124,7 @@
                 xTr0=document.createElement("tr");
                 xTd0=document.createElement("td");
                 tmp=document.createElement("img");
-                tmp.setAttribute("style","height: 75px;");
+                tmp.setAttribute("style","height: 105px;");
                 tmp.setAttribute("src","./examples/"+num.toString()+".jpg");
                 
                 xTd0.appendChild(tmp);
@@ -150,80 +141,69 @@
                 xTbody0.appendChild(xTr0);
                 
                 xTable0.appendChild(xTbody0);
-                
-               
-                
+
                 xA.appendChild(xTable0);
                 return xA
             }
 
-                function setImages(id){
-                    var data= [
-                    ['DiSanXian','DuoJiaoYuTou','GanBianSiJiDou','HongShaoDaiYu','HongShaoPaiGu'],
-                    ['HongShaoRou','HongShaoShiZiTou','HongShaoZhuTi','JiDanBing','JiangNiuRou'],
-                    ['LaZiJi','MaPoDouFu','MeiCaiKouRou','PaoJiaoFengZhao','SuanLaTuDouSi'],
-                    ['XiHongShiChaoJiDan','XiangLaXia','YuXiangQieZi','ZhaJiangMian','ZhenZhuWanZi']
-                    ];
-                 
-                    var xTable=document.getElementById(id);
-                    xTbody=document.createElement("tbody");
-                    
-                    for(var i=0;i<4;i+=1){
-                        xTr=document.createElement("tr");
-                        for(var j=0;j<5;j+=1){
-                            xTd=document.createElement("td");
-                            //xP=document.createElement("p");
-                            //xP.innerHTML=data[i][j];
-                            //xTd.appendChild(xP);
-                            xTd.appendChild(aBuild(i,j,data[i][j]));
-                            xTr.appendChild(xTd);
-                        }
-                        xTbody.appendChild(xTr);
-                    }
-                    xTable.appendChild(xTbody);
-                }
+            function setImages(id){
+                var data= [
+                ['DiSanXian','DuoJiaoYuTou','GanBianSiJiDou','HongShaoDaiYu','HongShaoPaiGu'],
+                ['HongShaoRou','HongShaoShiZiTou','HongShaoZhuTi','JiDanBing','JiangNiuRou'],
+                ['LaZiJi','MaPoDouFu','MeiCaiKouRou','PaoJiaoFengZhao','SuanLaTuDouSi'],
+                ['XiHongShiChaoJiDan','XiangLaXia','YuXiangQieZi','ZhaJiangMian','ZhenZhuWanZi']
+                ];
+             
+                var xTbody=document.getElementById(id);
                 
-                function setdata(id){
-                    var chineseName= [
-                    'DiSanXian','DuoJiaoYuTou','GanBianSiJiDou','HongShaoDaiYu','HongShaoPaiGu',
-                    'HongShaoRou','HongShaoShiZiTou','HongShaoZhuTi','JiDanBing','JiangNiuRou',
-                    'LaZiJi','MaPoDouFu','MeiCaiKouRou','PaoJiaoFengZhao','SuanLaTuDouSi',
-                    'XiHongShiChaoJiDan','XiangLaXia','YuXiangQieZi','ZhaJiangMian','ZhenZhuWanZi'
-                    ];
-                    
-                    var des=[
-                    "Sauteed Potato, Green Pepper and Eggplant","Steamed Fish Head with Diced Hot Red Peppers","Dry-Fried Green Beans with Minced Pork and Preserved Vegetables","Braised Hairtail in Brown Sauce","Spareribs with brown sauce","Pork braised in brown sauce","Stewed Pork Ball in Brown Sauce","Braised Pork Trotter with Soya Sauce","Egg cake","Beef in Brown Sauce","Spicy chicken","Mapo Tofu","Braised Pork with Preserved Vegetable in Soya Sauce","Chicken Feet with Pickled Peppers","Sour and spicy shredded potatoes","Scrambled egg with tomato","Fried Shrimps in Hot and Spicy Sauce","Yu-Shiang Eggplant","Noodles with Soy Bean Paste","Meat ball"
-                    ]
-                    var numImg=[
-                    '4333','3041','3499','3494','3457','4271','4036','4201','4063','3648','3317','3001','4181','3167','3346','3581','3468','3492','4502','3027'
-                    ]
-
-                    var xTbody=document.getElementById(id);
-                    
-                    for(var i=0;i<20;i+=1){
-                        xTr=document.createElement("tr");
-                        xTr.setAttribute("bgcolor","#efefef");
-        xTr.setAttribute("align","center");
-                        
-                            xTh0=document.createElement("th");
-                            xTh1=document.createElement("th");
-                            xTh2=document.createElement("th");
-                            xTh0.innerHTML=chineseName[i];
-                            xTh1.innerHTML=des[i];
-                            xTh2.innerHTML=numImg[i];
-
-                            xTr.appendChild(xTh0);
-                            xTr.appendChild(xTh1);
-                            xTr.appendChild(xTh2);
-                         
-               
-                        xTbody.appendChild(xTr);
+                for(var i=0;i<4;i+=1){
+                    xTr=document.createElement("tr");
+                    for(var j=0;j<5;j+=1){
+                        xTd=document.createElement("td");
+                        xTd.appendChild(aBuild(i,j,data[i][j]));
+                        xTr.appendChild(xTd);
                     }
+                    xTbody.appendChild(xTr);
                 }
-                
-                setImages("imageslist");
-                setdata("datalist");
+            }
             
+            function setdata(id){
+                var chineseName= [
+                'DiSanXian','DuoJiaoYuTou','GanBianSiJiDou','HongShaoDaiYu','HongShaoPaiGu','HongShaoRou','HongShaoShiZiTou','HongShaoZhuTi','JiDanBing','JiangNiuRou','LaZiJi','MaPoDouFu','MeiCaiKouRou','PaoJiaoFengZhao','SuanLaTuDouSi','XiHongShiChaoJiDan','XiangLaXia','YuXiangQieZi','ZhaJiangMian','ZhenZhuWanZi'
+                ];
+                
+                var des=[
+                "Sauteed Potato, Green Pepper and Eggplant","Steamed Fish Head with Diced Hot Red Peppers","Dry-Fried Green Beans with Minced Pork and Preserved Vegetables","Braised Hairtail in Brown Sauce","Spareribs with brown sauce","Pork braised in brown sauce","Stewed Pork Ball in Brown Sauce","Braised Pork Trotter with Soya Sauce","Egg cake","Beef in Brown Sauce","Spicy chicken","Mapo Tofu","Braised Pork with Preserved Vegetable in Soya Sauce","Chicken Feet with Pickled Peppers","Sour and spicy shredded potatoes","Scrambled egg with tomato","Fried Shrimps in Hot and Spicy Sauce","Yu-Shiang Eggplant","Noodles with Soy Bean Paste","Meat ball"
+                ]
+                var numImg=[
+                '4333','3041','3499','3494','3457','4271','4036','4201','4063','3648','3317','3001','4181','3167','3346','3581','3468','3492','4502','3027'
+                ]
+
+                var xTbody=document.getElementById(id);
+                
+                for(var i=0;i<20;i+=1){
+                    xTr=document.createElement("tr");
+                    xTr.setAttribute("bgcolor","#efefef");
+                    xTr.setAttribute("align","center");
+                    
+                    xTh0=document.createElement("th");
+                    xTh1=document.createElement("th");
+                    xTh2=document.createElement("th");
+                    xTh0.innerHTML=chineseName[i];
+                    xTh1.innerHTML=des[i];
+                    xTh2.innerHTML=numImg[i];
+
+                    xTr.appendChild(xTh0);
+                    xTr.appendChild(xTh1);
+                    xTr.appendChild(xTh2);
+
+                    xTbody.appendChild(xTr);
+                }
+            }
+            
+            setImages("imageslist");
+            setdata("datalist");
+        
         </script>
     </body>
 </html>
